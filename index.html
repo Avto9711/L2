@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+        <!-- <ul>
+            <li v-for="tarea in tareas">{{tarea.nombre}}</li>
+        </ul> -->
+        <!-- <tareas v-bind:tareas="tareas" titulo="Mi primer componente"></tareas> -->
+    <!-- <usuarios></usuarios> -->
+    <!-- <persona  edad="21" ></persona> -->
+        <personas @remover-persona-por-indice="removerPersonaPorIndice" :personas="personas"></personas>
+    </main>
+    <!-- <script type="text/template" id="usersTemplate">
+            <section>
+                    <h1>Usuarios</h1>
+                    <div v-for="usuario in usuarios">
+                        <span>{{usuario.name}} -  </span>
+                        <span>{{usuario.username}} - </span>
+                        <span>{{usuario.email}} - </span>
+                        <button type="Button" v-on:click="borrarUsuario(usuario)">Eliminar</button>
+                    </div>
+        
+                    <template v-if="usuariosBorrados.length">
+                        <h1>Usuarios Borrados</h1>
+                        <div v-for="usuario in usuariosBorrados">
+                            <span>{{usuario.name}}   </span>
+                        </div>
+                    </template>
+            </section>
+    </script> -->
+
+    <!-- <template id="usersTemplate">
+            <section>
+                    <h1>Usuarios</h1>
+                    <div v-for="usuario in usuarios">
+                        <span>{{usuario.name}} -  </span>
+                        <span>{{usuario.username}} - </span>
+                        <span>{{usuario.email}} - </span>
+                        <button type="Button" v-on:click="borrarUsuario(usuario)">Eliminar</button>
+                    </div>
+        
+                    <template v-if="usuariosBorrados.length">
+                        <h1>Usuarios Borrados</h1>
+                        <div v-for="usuario in usuariosBorrados">
+                            <span>{{usuario.name}}   </span>
+                        </div>
+                    </template>
+            </section>
+    </template> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+</html>
